@@ -1,0 +1,133 @@
+<div class="modal modal-overlay" ui-if="amsp1_pop1" ui-shared-state="amsp1_pop1" ng-controller="amsp1_pop">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" ui-turn-off="amsp1_pop1">&times;</button>
+				<h2 class="modal-title">품목리스트</h2>
+			</div>
+			<div class="modal-body">
+								
+				<style>
+				html, body {
+				  position: relative;
+				  height: 100%;
+				}
+				body {
+				  background: #fff;
+				  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				  font-size: 14px;
+				  color:#000;
+				  margin: 0;
+				  padding: 0;
+				}
+				.swiper-container {
+				  width: 100%;
+				  height: 100%;
+				}
+				.swiper-slide {
+				  font-size: 18px;
+				  height: auto;
+				  -webkit-box-sizing: border-box;
+				  box-sizing: border-box;
+				  padding: 10px;
+				}
+				</style>				
+				<!-- 스와이프 스크롤 -->
+				<div style="height:60vh">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- 컨텐츠 -->
+								<div class="titset">
+									<h3 class="hd3">IT자산</h3>
+								</div>
+								<div class="section">
+									<div class="ctrbox_col">
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype1" name="ittype">
+											<label for="ittype1">컴퓨터</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype2" name="ittype">
+											<label for="ittype2">모니터</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype3" name="ittype">
+											<label for="ittype3">프린터</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype4" name="ittype">
+											<label for="ittype4">네트워크장비</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype5" name="ittype">
+											<label for="ittype5">기타</label>
+										</span>
+									</div>
+								</div>
+								<div class="titset">
+									<h3 class="hd3">비품</h3>
+								</div>
+								<div class="section">
+									<div class="ctrbox_col">
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype6" name="ittype">
+											<label for="ittype6">책상</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype7" name="ittype">
+											<label for="ittype7">의자</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype8" name="ittype">
+											<label for="ittype8">서랍장</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype9" name="ittype">
+											<label for="ittype9">전화기</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype10" name="ittype">
+											<label for="ittype10">책장</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype11" name="ittype">
+											<label for="ittype11">전자기기</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype12" name="ittype">
+											<label for="ittype12">사무용품</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype9" name="ittype">
+											<label for="ittype9">전화기</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype10" name="ittype">
+											<label for="ittype10">책장</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype11" name="ittype">
+											<label for="ittype11">전자기기</label>
+										</span>
+										<span class="inputset ckbox">											
+											<input type="checkbox" id="ittype12" name="ittype">
+											<label for="ittype12">사무용품</label>
+										</span>
+									</div>
+								</div>								
+								<!-- //컨텐츠 -->								
+							</div>						
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>					
+				</div>				
+				<!-- //스와이프 스크롤 -->
+			</div>
+			<div class="modal-footer">
+				<button ui-turn-off="amsp1_pop1" class="btn btn-default">취소</button>
+				<button ui-turn-off="amsp1_pop1" class="btn btn-primary">확인</button>
+			</div>
+		</div>
+	</div>
+</div>

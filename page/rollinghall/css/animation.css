@@ -1,0 +1,53 @@
+/* //////////////버튼 에니메이션////////////// */
+.active { 
+-webkit-animation-delay:0s; 
+-webkit-animation-duration: 200ms; 
+-webkit-animation-iteration-count:1;
+-webkit-animation-name: btn_click;
+
+-moz-animation-delay:0s; 
+-moz-animation-duration: 200ms; 
+-moz-animation-iteration-count:1;
+-moz-animation-name: btn_click;
+
+animation-delay:0s; 
+animation-duration: 200ms; 
+animation-iteration-count:1;
+animation-name: btn_click; }
+
+
+@-webkit-keyframes btn_click { 
+  from { 
+    -webkit-animation-timing-function: ease; 
+	-webkit-transform: translate(1px,1px);
+	opacity:1;
+  } 
+  to { 
+    -webkit-animation-timing-function: ease-out;
+	opacity:0.3; 
+  } 
+}
+
+@-moz-keyframes btn_click { 
+  from { 
+    -moz-animation-timing-function: ease; 
+	-moz-transform: translate(1px,1px);
+	opacity:1; 
+  } 
+  to { 
+    -moz-animation-timing-function: ease-out;
+	opacity:0.3; 
+  } 
+}
+
+@keyframes btn_click { 
+  from { 
+    animation-timing-function: ease; 
+	transform: translate(1px,1px);
+	opacity:1;
+  } 
+  to { 
+    animation-timing-function: ease-out;
+	opacity:0.3; 
+  } 
+}
