@@ -69,7 +69,7 @@
 	transform:
     translateX(calc(var(--mouse-x) * 0.06px))
     translateY(calc(var(--mouse-y) * 0.06px));
-	color:#ed4444; font-size:64px; text-align:center;
+	color:#f6be15; font-size:64px; text-align:center;
 	z-index:100;
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset {
@@ -77,7 +77,8 @@
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset .stxt {
 	position:absolute;
 	top:210px; left:0; right:0;
-	font-size:30px;
+	font-size:25px;
+	letter-spacing: 10px;
 }
 
 .page.p0 .cont_outer .cont_inner .section .stxt.t1 {
