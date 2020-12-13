@@ -36,15 +36,60 @@
 
 .page.p0 { 
 	height:1686px; 
-	background:url('../img/bg1.jpg') no-repeat center;
-	background-size:cover;
 }
+.page.p0 .bgset {
+	height: 1686px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -99;
+	overflow: hidden;
+}
+.page.p0 .bgset .bg {
+	width: 100%;
+	height: 2458px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	mix-blend-mode: multiply;
+}
+.page.p0 .bgset .bg.t1 {
+	transform:
+    translateX(calc(var(--mouse-x) * 0.05px))
+    translateY(calc(var(--mouse-y) * 0.05px));
+}
+.page.p0 .bgset .bg.t2 {
+	transform:
+    translateX(calc(var(--mouse-x) * 0.03px))
+    translateY(calc(var(--mouse-y) * 0.03px));
+}
+.page.p0 .bgset .bg.t3 {
+	transform:
+    translateX(calc(var(--mouse-x) * 0.02px))
+    translateY(calc(var(--mouse-y) * 0.02px));
+}
+.page.p0 .bgset .bg.t4 {
+	transform:
+    translateX(calc(var(--mouse-x) * 0.01px))
+    translateY(calc(var(--mouse-y) * 0.01px));
+}
+.page.p0 .bgset .bg > img {
+	width: 130%;
+	height: auto;
+	min-width: 1280px;
+	margin-left: calc(100% / -5);
+	margin-top: calc(100% / -20)
+}
+.page.p0 .bgset .bg.t1 > img {}
+.page.p0 .bgset .bg.t2 > img {}
+.page.p0 .bgset .bg.t3 > img {}
+.page.p0 .bgset .bg.t4 > img {}
 .page.p0 .cont_outer {
 	height:920px; border:1px solid #f00;
 }
 .page.p0 .cont_outer .cont_inner {
 	position:relative;
-	border:1px solid #f00;
 	left:50%;
 	height:510px; width:1280px;
 	top:50%;
@@ -70,9 +115,6 @@
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset {
 	position:absolute;
-	transform:
-    translateX(calc(var(--mouse-x) * 0.01px))
-    translateY(calc(var(--mouse-y) * 0.01px));
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset .stxt {
 	position:absolute;
@@ -84,9 +126,6 @@
 
 .page.p0 .cont_outer .cont_inner .section .stxt.t1 {
 	position:absolute;
-	transform:
-    translateX(calc(var(--mouse-x) * 0.01px))
-    translateY(calc(var(--mouse-y) * 0.01px));
 	color:#c4c4c4; 
 }
 .page.p0 .cont_outer .cont_inner .section.sec1 {
