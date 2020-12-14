@@ -320,7 +320,7 @@
 .page.p2 .grid_outer .pgrid .btnset .btn > a {
 	display: block;
 	height: 100%;
-	z-index: 99;
+	z-index: 50;
 }
 .page.p2 .grid_outer .pgrid .btnset .btn.detailview {
 	width:133px;
