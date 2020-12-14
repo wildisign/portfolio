@@ -2,7 +2,7 @@
 /* CSS Document */
 *{box-sizing:border-box;}
 
-.container {min-width:1280px;}
+.container {min-width:1280px; background: #fff;}
 .header {position:absolute; top:0; left:0; right:0; height:80px; z-index: 99;}
 .header_inner {position: relative; height: 80px; width: 1280px; margin:0 auto}
 .header_inner .logo {position: absolute; top:40px;}
