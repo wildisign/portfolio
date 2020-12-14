@@ -3,7 +3,7 @@
 *{box-sizing:border-box;}
 
 .container {min-width:1280px;}
-.header {position:absolute; top:0; left:0; right:0; height:80px}
+.header {position:absolute; top:0; left:0; right:0; height:80px; z-index: 99;}
 .header_inner {position: relative; height: 80px; width: 1280px; margin:0 auto}
 .header_inner .logo {position: absolute; top:40px;}
 .header_inner .nav {position: absolute; top:80px; left: 800px;}
@@ -37,15 +37,60 @@
 .page.p0 { 
 	height:1686px; 
 }
-.page.p0 .bgset {
+.page.p0 .bgwrap {
 	height: 1686px;
 	width: 100%;
+	min-width: 1280px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -99;
 	overflow: hidden;
 }
+.page.p0 .bgwrap .bgset {
+	width: 100%;
+	height: 2458px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.page.p0 .bgwrap .bgset .bg {
+	width: 120%;
+	height: 80%;
+	position: absolute;
+	margin-left: calc(100% / -10);
+	margin-top: calc(100% / -11);
+	mix-blend-mode: multiply;
+}
+.page.p0 .bgwrap .bgset .bg.t1 {
+	background: url('../img/layer1.png') no-repeat center;
+	background-size: cover;
+	transform:
+    translateX(calc(var(--mouse-x) * 0.07px))
+    translateY(calc(var(--mouse-y) * 0.07px));
+}
+.page.p0 .bgwrap .bgset .bg.t2 {
+	background: url('../img/layer2.png') no-repeat center;
+	background-size: cover;
+	transform:
+    translateX(calc(var(--mouse-x) * 0.05px))
+    translateY(calc(var(--mouse-y) * 0.05px));
+}
+.page.p0 .bgwrap .bgset .bg.t3 {
+	background: url('../img/layer3.png') no-repeat center;
+	background-size: cover;
+	transform:
+    translateX(calc(var(--mouse-x) * 0.02px))
+    translateY(calc(var(--mouse-y) * 0.02px));
+}
+.page.p0 .bgwrap .bgset .bg.t4 {
+	background: url('../img/layer4.png') no-repeat center;
+	background-size: cover;
+	transform:
+    translateX(calc(var(--mouse-x) * 0.01px))
+    translateY(calc(var(--mouse-y) * 0.01px));
+}
+
+/*
 .page.p0 .bgset .bg {
 	width: 100%;
 	height: 2458px;
@@ -56,13 +101,13 @@
 }
 .page.p0 .bgset .bg.t1 {
 	transform:
-    translateX(calc(var(--mouse-x) * 0.05px))
-    translateY(calc(var(--mouse-y) * 0.05px));
+    translateX(calc(var(--mouse-x) * 0.07px))
+    translateY(calc(var(--mouse-y) * 0.07px));
 }
 .page.p0 .bgset .bg.t2 {
 	transform:
-    translateX(calc(var(--mouse-x) * 0.03px))
-    translateY(calc(var(--mouse-y) * 0.03px));
+    translateX(calc(var(--mouse-x) * 0.05px))
+    translateY(calc(var(--mouse-y) * 0.05px));
 }
 .page.p0 .bgset .bg.t3 {
 	transform:
@@ -81,10 +126,11 @@
 	margin-left: calc(100% / -5);
 	margin-top: calc(100% / -20)
 }
-.page.p0 .bgset .bg.t1 > img {}
-.page.p0 .bgset .bg.t2 > img {}
-.page.p0 .bgset .bg.t3 > img {}
-.page.p0 .bgset .bg.t4 > img {}
+*/
+
+
+
+
 .page.p0 .cont_outer {
 	height:920px; border:1px solid #f00;
 }
@@ -114,7 +160,7 @@
 	z-index:100;
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset {
-	position:absolute;
+
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .titset .stxt {
 	position:absolute;
