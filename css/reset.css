@@ -92,7 +92,7 @@ url("../font/NanumBarunGothic.ttf") format('truetype');
 @font-face {
  font-family: 'SpoqaHanSansNeoThin';
  font-style: normal;
- font-weight: 5;
+ font-weight: 400;
  src: local('SpoqaHanSansNeoThin');
  src: url("../font/SpoqaHanSansNeo-Thin.eot");
  src: url("../font/SpoqaHanSansNeo-Thin.eot?#iefix") format('embedded-opentype'),
@@ -104,7 +104,7 @@ url("../font/SpoqaHanSansNeo-Thin.ttf") format('truetype');
 @font-face {
  font-family: 'SpoqaHanSansNeoLight';
  font-style: normal;
- font-weight: 10;
+ font-weight: 400;
  src: local('SpoqaHanSansNeoLight');
  src: url("../font/SpoqaHanSansNeo-Light.eot");
  src: url("../font/SpoqaHanSansNeo-Light.eot?#iefix") format('embedded-opentype'),
@@ -116,7 +116,7 @@ url("../font/SpoqaHanSansNeo-Light.ttf") format('truetype');
 @font-face {
  font-family: 'SpoqaHanSansNeoRegular';
  font-style: normal;
- font-weight: 20;
+ font-weight: 400;
  src: local('SpoqaHanSansNeoRegular');
  src: url("../font/SpoqaHanSansNeo-Regular.eot");
  src: url("../font/SpoqaHanSansNeo-Regular.eot?#iefix") format('embedded-opentype'),
@@ -128,7 +128,7 @@ url("../font/SpoqaHanSansNeo-Regular.ttf") format('truetype');
 @font-face {
  font-family: 'SpoqaHanSansNeoMedium';
  font-style: normal;
- font-weight: 30;
+ font-weight: 400;
  src: local('SpoqaHanSansNeoMedium');
  src: url("../font/SpoqaHanSansNeo-Medium.eot");
  src: url("../font/SpoqaHanSansNeo-Medium.eot?#iefix") format('embedded-opentype'),
@@ -140,7 +140,7 @@ url("../font/SpoqaHanSansNeo-Medium.ttf") format('truetype');
 @font-face {
  font-family: 'SpoqaHanSansNeoBold';
  font-style: normal;
- font-weight: 60;
+ font-weight: 400;
  src: local('SpoqaHanSansNeoBold');
  src: url("../font/SpoqaHanSansNeo-Bold.eot");
  src: url("../font/SpoqaHanSansNeo-Bold?#iefix") format('embedded-opentype'),
