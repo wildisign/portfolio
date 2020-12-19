@@ -152,16 +152,12 @@
 .page.p0 .cont_outer .cont_inner {
 	position:relative;
 	left:50%;
-	height:510px; 
-	width:1280px;
 	top:50%;
-	margin:-200px 0 0 -640px;
+	height:620px; 
+	width:1280px;
+	margin-top: -310px;
+	margin-left: -640px;
 	overflow: hidden;
-}
-.page.p0 .cont_outer .cont_inner .blank_link {
-	position:absolute; left:0; right:0;
-	height:510px; 
-	z-index:100;
 }
 .page.p0 .cont_outer .cont_inner .section .stxt {
 	position:absolute;
@@ -181,17 +177,17 @@
 .page.p0 .cont_outer .cont_inner .section.sec0 .stxt{
 	position:absolute;
 	display:inline-block;
-	top:130px; 
+	top:215px; 
 	left:0;
 	height:200px;
 	width:100%;
 	color: #f6be15;
 	font-size:2.5vw; 
 	z-index:100;
-	line-height: 1.8em;
+	line-height: 1.5em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec1 .stxt{
-	top:40px;
+	top:160px;
 	left:400px;
 	height:90px;
 	width:100%;
@@ -202,8 +198,8 @@
 	line-height: 1.2em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec2 .stxt{
-	top:-80px;
-	left:600px;
+	top:80px;
+	left:550px;
 	height:90px;
 	width:100%;
 	font-size: .7vw;
@@ -213,8 +209,8 @@
 	line-height: 1em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec3 .stxt{
-	top:498px;
-	left:-600px;
+	top:500px;
+	left:-550px;
 	height:90px;
 	width:100%;
 	font-size: .7vw;
@@ -224,7 +220,7 @@
 	line-height: 1em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec4 .stxt{
-	top:380px;
+	top:420px;
 	left:-400px;
 	height:90px;
 	width:100%;
@@ -246,6 +242,7 @@
 .page.p0 .cont_outer .cont_inner .section .stxt.t3,
 .page.p0 .cont_outer .cont_inner .section .stxt.t4 {
 	font-weight: lighter;
+	color: bisque;
 }
 
 
