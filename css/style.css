@@ -2,7 +2,11 @@
 /* CSS Document */
 *{box-sizing:border-box;}
 
+.bold {font-weight:bold}
 .container {min-width:1280px; background: #fff;}
+
+/* 헤더 */
+
 .header {
 	position:fixed; 
 	top:0; left:0; right:0; 
@@ -38,6 +42,8 @@
 	background-position:-24px 0;
 	left:1218px;
 }
+
+/* 페이지0 */
 
 .page.p0 { 
 	height:1686px; 
@@ -151,63 +157,87 @@
 	height:510px; 
 	z-index:100;
 }
-.page.p0 .cont_outer .cont_inner .section {
+.page.p0 .cont_outer .cont_inner .section .stxt {
 	position:absolute;
 	display:inline-block;
+	text-align:center;
+	transition: 3s ease-out;
 }
-
-.page.p0 .cont_outer .cont_inner .section.sec0 {
+.page.p0 .cont_outer .cont_inner .section .stxt.main .stxt_name {
 	position:absolute;
-	display:inline-block;
-	top:155px; left:50%; 
-	height:200px;width:1000px; margin-left:-500px;
-	color: #f6be15; font-size:64px; text-align:center;
-	z-index:100;
-}
-.page.p0 .cont_outer .cont_inner .section.sec0 .titset {
-
-}
-.page.p0 .cont_outer .cont_inner .section.sec0 .titset .stxt {
-	position:absolute;
-	top:180px; left:0; right:0;
-	font-size:25px;
+	top:7em;
+	left:0;
+	right:0;
+	font-size: 0.4em;
+	letter-spacing: 0.5em;
 	font-weight: 100;
-	letter-spacing: 10px;
 }
-
-.page.p0 .cont_outer .cont_inner .section .stxt.t1 {
+.page.p0 .cont_outer .cont_inner .section.sec0 .stxt{
 	position:absolute;
-	color:#c4c4c4; 
+	display:inline-block;
+	top:130px; 
+	left:0;
+	height:200px;
+	width:100%;
+	color: #f6be15;
+	font-size:2.5vw; 
+	z-index:100;
+	line-height: 1.8em;
 }
-.page.p0 .cont_outer .cont_inner .section.sec1 {
-	top:40px; left:839px;
-	height:90px;width:300px;
-	opacity: 0.7;
-	filter: blur(0.5px);
-}
-.page.p0 .cont_outer .cont_inner .section.sec2 {
-	top:-80px; left:1080px;
-	height:90px;width:200px;
-	font-size: 0.5em;
+.page.p0 .cont_outer .cont_inner .section.sec1 .stxt{
+	top:40px;
+	left:400px;
+	height:90px;
+	width:100%;
+	font-size: 1vw;
 	opacity: 0.5;
 	filter: blur(1px);
+	color:#c4c4c4;
+	line-height: 1.2em;
 }
-.page.p0 .cont_outer .cont_inner .section.sec3 {
-	top:498px; left:0px;
-	height:90px;width:200px;
-	font-size: 0.5em;
+.page.p0 .cont_outer .cont_inner .section.sec2 .stxt{
+	top:-80px;
+	left:600px;
+	height:90px;
+	width:100%;
+	font-size: .7vw;
+	opacity: 0.3;
+	filter: blur(1.5px);
+	color:#c4c4c4;
+	line-height: 1em;
+}
+.page.p0 .cont_outer .cont_inner .section.sec3 .stxt{
+	top:498px;
+	left:-600px;
+	height:90px;
+	width:100%;
+	font-size: .7vw;
+	opacity: 0.3;
+	filter: blur(1.5px);
+	color:#c4c4c4;
+	line-height: 1em;
+}
+.page.p0 .cont_outer .cont_inner .section.sec4 .stxt{
+	top:380px;
+	left:-400px;
+	height:90px;
+	width:100%;
+	font-size: 1vw;
 	opacity: 0.5;
 	filter: blur(1px);
+	color:#c4c4c4;
+	line-height: 1.2em;
 }
-.page.p0 .cont_outer .cont_inner .section.sec4 {
-	top:380px; left:139px;
-	height:90px;width:300px;
-	opacity: 0.7;
-	filter: blur(0.5px);
+.page.p0 .cont_outer .cont_inner .section.sec0 .stxt.main {
+	font-size:4vw;
+	line-height: 1.3em;
+}
+.page.p0 .cont_outer .cont_inner .section.sec4 .stxt.main {
 }
 
 
-.bold {font-weight:bold}
+
+/* 2페이지 */
 
 .page.p1 {margin-top:-719px;}
 
