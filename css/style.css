@@ -1,9 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-*{box-sizing:border-box;}
+*{box-sizing:border-box; font-family: 'Spoqa Han Sans Neo';}
 
 .bold {font-weight:bold}
-.container {min-width:1280px; background: #fff;}
+.container {
+	min-width:1280px; 
+	background: #fff;
+}
 
 /* 헤더 */
 
@@ -143,14 +146,17 @@
 
 
 .page.p0 .cont_outer {
-	height:920px; border:1px solid #f00;
+	height:920px; 
+	border:1px solid #f00;
 }
 .page.p0 .cont_outer .cont_inner {
 	position:relative;
 	left:50%;
-	height:510px; width:1280px;
+	height:510px; 
+	width:1280px;
 	top:50%;
 	margin:-200px 0 0 -640px;
+	overflow: hidden;
 }
 .page.p0 .cont_outer .cont_inner .blank_link {
 	position:absolute; left:0; right:0;
@@ -228,13 +234,19 @@
 	color:#c4c4c4;
 	line-height: 1.2em;
 }
+
 .page.p0 .cont_outer .cont_inner .section.sec0 .stxt.main {
 	font-size:4vw;
 	line-height: 1.3em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec4 .stxt.main {
 }
-
+.page.p0 .cont_outer .cont_inner .section .stxt.t1,
+.page.p0 .cont_outer .cont_inner .section .stxt.t2,
+.page.p0 .cont_outer .cont_inner .section .stxt.t3,
+.page.p0 .cont_outer .cont_inner .section .stxt.t4 {
+	font-weight: lighter;
+}
 
 
 /* 2페이지 */
@@ -266,7 +278,8 @@
 	padding:0;
 }
 .page.p1 .pfwrap .grid:nth-child(2) {
-	padding-left:100px;}
+	padding-left:100px;
+}
 .page.p1 .pfwrap .grid:nth-child(3) { }
 .page.p1 .pfwrap .grid:nth-child(4) { }
 
@@ -277,7 +290,7 @@
 	margin-top:33px;
 }
 .page.p1 .pfwrap .grid .stxt.pf {
-	width:225px; height:126px;
+	width:280px; height:126px;
 	margin:20px 0 92px;
 	line-height:26px;
 }
