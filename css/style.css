@@ -71,7 +71,7 @@
 	width: 120%;
 	height: 80%;
 	position: absolute;
-	margin-left: calc(100% / -10);
+	margin-left: calc(100% / -11);
 	margin-top: calc(100% / -11);
 	mix-blend-mode: multiply;
 }
@@ -81,6 +81,7 @@
 	transform:
     translateX(calc(var(--mouse-x) * 0.07px))
     translateY(calc(var(--mouse-y) * 0.07px));
+	z-index: 3;
 }
 .page.p0 .bgwrap .bgset .bg.t2 {
 	background: url('../img/layer2.png') no-repeat center;
@@ -88,6 +89,7 @@
 	transform:
     translateX(calc(var(--mouse-x) * 0.05px))
     translateY(calc(var(--mouse-y) * 0.05px));
+	z-index: 2;
 }
 .page.p0 .bgwrap .bgset .bg.t3 {
 	background: url('../img/layer3.png') no-repeat center;
@@ -103,7 +105,11 @@
     translateX(calc(var(--mouse-x) * 0.01px))
     translateY(calc(var(--mouse-y) * 0.01px));
 }
-
+.page.p0 .bgwrap .bgset .bg.t4 {
+	background: url('../img/layer_square.png') no-repeat center;
+	background-size: cover;
+	mix-blend-mode: normal;
+}
 /*
 .page.p0 .bgset .bg {
 	width: 100%;
@@ -164,6 +170,7 @@
 	display:inline-block;
 	text-align:center;
 	transition: 3s ease-out;
+	z-index:100;
 }
 .page.p0 .cont_outer .cont_inner .section .stxt.main .stxt_name {
 	position:absolute;
@@ -182,8 +189,7 @@
 	height:200px;
 	width:100%;
 	color: #f6be15;
-	font-size:2.5vw; 
-	z-index:100;
+	font-size:2vw; 
 	line-height: 1.5em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec1 .stxt{
@@ -241,8 +247,6 @@
 .page.p0 .cont_outer .cont_inner .section .stxt.t2,
 .page.p0 .cont_outer .cont_inner .section .stxt.t3,
 .page.p0 .cont_outer .cont_inner .section .stxt.t4 {
-	font-weight: lighter;
-	color: bisque;
 }
 
 
