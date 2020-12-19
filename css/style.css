@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-*{box-sizing:border-box; font-family: 'Spoqa Han Sans Neo';}
+*{box-sizing:border-box; font-family: 'SpoqaHanSansNeoRegular';}
 
 .bold {font-weight:bold}
 .container {
@@ -189,7 +189,7 @@
 	height:200px;
 	width:100%;
 	color: #f6be15;
-	font-size:2vw; 
+	font-size: 1.8vw; 
 	line-height: 1.5em;
 }
 .page.p0 .cont_outer .cont_inner .section.sec1 .stxt{
@@ -247,6 +247,7 @@
 .page.p0 .cont_outer .cont_inner .section .stxt.t2,
 .page.p0 .cont_outer .cont_inner .section .stxt.t3,
 .page.p0 .cont_outer .cont_inner .section .stxt.t4 {
+	font-family: 'SpoqaHanSansNeoThin';
 }
 
 
