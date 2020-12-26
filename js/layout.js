@@ -26,8 +26,6 @@ $(function(){
  
     clearInterval(vInterval);
  
-	});
-	
     var vInterval = setInterval( PageFocus, timer );
 	
 	function PageFocus() {
@@ -52,5 +50,8 @@ $(function(){
 			
 			console.log(first);
 	}
+		
+	});
+	
 
 });
