@@ -15,21 +15,8 @@ $(function(){
 	var Box = $(".cont_inner > .section");
 	var timer = 8000;
 	var count = 0;
-	
-	jQuery(window).blur(function(){
- 
-    clearInterval(vInterval);
- 
-	});
-	
-	jQuery(window).focus(function(){
- 
-    clearInterval(vInterval);
- 
-    var vInterval = setInterval( PageFocus, timer );
-	
-	function PageFocus() {
-		
+
+	var focus = setInterval (function(){
 			count++;
 			var first = count % 5,
 				second = (count + 1) % 5,
@@ -47,11 +34,9 @@ $(function(){
 			Box.eq(fourth).addClass("section sec3");
 			Box.eq(fifth).removeClass();
 			Box.eq(fifth).addClass("section sec4");
-			
-			console.log(first);
-	}
-		
-	});
+	console.log("작동");
+
+	}, timer)
 	
 
 });
