@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head> 
+	<meta charset="UTF-8"> 
+	<title>제이쿼리 모바일</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- 모바일 디바이스 설정 --> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><!--제이쿼리 연결 --> 
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script><!-- 제이쿼리모바일 연결 --> 
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	</head> 
+	<body> 
+		<div data-role="page"><!-- page --> 
+			<div data-role="header"> 
+				<h2>Title</h2> 
+				<a href="#leftpanel" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">leftpanel</a> 
+			</div><!--header --> 
+			<div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open"> 
+				<div class="ui-panel-inner"> 
+					<a data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext" style="margin-top:-10px; margin-left:-10px;margin-bottom:20px;"></a> 
+					<ul data-role="listview" class="ui-listview"> 
+						<li class="ui-first-child"> 
+							<a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">블로그</a> 
+						</li> 
+						<li> 
+							<a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">menu2</a> 
+						</li>
+						<li> 
+							<a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">menu3</a> 
+						</li> 
+					</ul> 
+				</div><!-- ui-panel-inner --> </div><!-- end of menu--> 
+			<div data-role="content">
+				<div class="swiper-container play">
+					<div class="swiper-wrapper play-wrap">
+						<div class="swiper-slide play-pt t1">
+							<!-- 1st -->
+							<span class="simg">
+								<img src="img/poster1.jpg" alt="" />
+							</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.07.25</span>
+								리밋 단독 콘서트
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>
+						</div>
+						</div>																
+						<div class="swiper-slide play-pt t2">
+							<span class="simg">
+								<img src="img/poster2.jpg" alt="" />
+							</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.07.26</span>
+								성영주 단독 콘서트
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>							
+						</div>
+						</div>									
+						<div class="swiper-slide play-pt t3">
+							<span class="simg">
+								<img src="img/poster3.jpg" alt="" />
+							</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.08.02</span>
+								픽보이 TalksOnMusic
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>
+						</div>						
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			
+			</div><!-- end of content --> 
+		</div><!-- end of page --> 
+	  <script>
+		var swiper = new Swiper('.swiper-container', {
+		  pagination: {
+			el: '.swiper-pagination',
+		  },
+			passiveListeners : false
+		});
+
+	  </script>
+	</body>
+
+</html>

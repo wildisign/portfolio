@@ -1,0 +1,242 @@
+.btn {border:1px solid #d9d9d9; border-radius: 5px; padding:7px 12px; font-size: .875em; text-align: left}
+.btn .ico:after {content:""; display: inline-block; width: 12px; height: 12px; background: url(../img/icoset.png) no-repeat 0 0;
+background-size:auto 12px; vertical-align: middle; margin-left: 5px}
+.btn .ico.downarr:after {background-position:0 0}
+
+.btn .ico.close {float:none; font-size:inherit; font-weight:normal; line-height: normal; color:inherit; text-shadow:none; opacity: 1}
+.btn .ico.close:after {background-position:-12px 0}
+.btn.ctype1 {border:none; background: #759ed3; color:#fff}
+.btn.ctype2 {border:none; background: #75c7d3; color:#fff}
+.btn.ctype3 {border:1px solid #d9d9d9}
+
+.hidden {text-indent:-9999px; visibility: hidden; font-size: 0; width: 0; height: 0}
+.app {background: #f2f2f2}
+.bodyhead {background:#fff; height:40px; border-bottom:1px solid #d9d9d9; text-align:center; line-height: 40px; margin-bottom: 15px}
+.bodyhead .titset .hd2 { }
+.bodyhead.none {display:none}
+
+
+.navbar-app {background: #1b1b1b}
+.navbar-brand {} 
+.navbar .fa-bars:before,
+.navbar .fa-search:before,
+.navbar .fa-close:before{color:#fff; font-size: 1.3em; line-height: 50px}
+.list-group-item > h1 {font-size: 1em}
+
+
+.frmselect {}
+.frmselect .itemselectbox {float:right}
+.frmselect .btn {margin-bottom: 5px}
+.popselect {display: inline-block;  position: relative}
+.popselect .btn {width:auto; text-align: left; overflow: hidden;}
+
+.popselect .tollbox {position:absolute; width: 100%; background: #fff; top:0; left: 0; border-radius: 5px;
+border:1px solid #d9d9d9}
+.popselect .tollbox {display:none;}
+.popselect .tollbox .btn {border:none}
+.popselect .tollbox.on {display:block}
+.popselect .tollbox .close {overflow:hidden; float: none; opacity: 1; position: relative; height: 36px; border-bottom:1px solid #d9d9d9}
+.popselect .tollbox .close .btn {position: absolute; right: 0; top: 0; margin-top: 0; height: 100%; padding: 0 15px; margin: 0;;
+width:auto}
+.popselect .tollbox .close .btn:before {content:""; display:block; width: 12px; height: 12px; background: url(../img/popselect_close.png) no-repeat 0 0; background-size:100%; position: absolute; top:50%; margin-top: -6px; left:50%; margin-left:-6px}
+.popselect .tollbox > ul { }
+.popselect .tollbox > ul > li {border-bottom:1px solid #d9d9d9}
+.popselect .tollbox > ul > li:last-child {border-bottom:0}
+.popselect .tollbox > ul > li > a {display:block; padding:10px; position: relative}
+.popselect .tollbox > ul > li > a:before {content:""; display:block; width: 7px; height: 13px; background: url(../img/popselect_arr_rt.png) no-repeat 0 0; background-size:100%; position: absolute; top:50%; right:10px; margin-top:-7px}
+
+.btn-group.pull-left .btn {padding:0 12px;}
+
+.t_list {border-top:1px solid #666}
+.t_list > table {width:100%; border-right:1px hidden #fff }
+.t_list > table thead th {background:#f2f2f2; text-align: center}
+.t_list > table th,
+.t_list > table td {padding:8px; font-weight:normal; font-size: .875em; border:1px solid #d9d9d9; border-width:0 1px 1px 0; color: #787878}
+
+.result .btn:before {content: "\f00d"; font-family: FontAwesome; float: right}
+.itemselectbox {overflow:hidden}
+.itemselectbox .btn {display:inline-block; width: auto; float: right; padding:7px 9px; font-size: .75em}
+.itemselectbox .btn:after {content:"\f00c"; font-family: FontAwesome; margin:0 0 0 5px}
+
+
+.navbar-absolute-bottom .btn {padding:0}
+
+
+/* 그리드 */ 
+.popselect + .result,
+.itemselectbox + .t_list {margin-top:10px}
+
+.titset + .section {margin-top:10px}
+.section + .titset {margin-top:30px}
+
+
+.navbar-absolute-bottom {background:#222; height: 50px;}
+.navbar-absolute-bottom .justified {display: table; height: 100%}
+.navbar-absolute-bottom .btn {color: #a6a6a6; line-height: normal; display: table-cell; vertical-align: middle; text-align: center;
+font-size: .813em}
+.navbar-absolute-bottom .btn .ico:before {content:""; display: block; width:15px; height: 15px; background: url(../img/mnavbottom_icoset.png) no-repeat 0 0; background-size:auto 15px; margin:0 auto 3px}
+
+.navbar-absolute-bottom .btn .ico.item:before {background-position:0 0}
+.navbar-absolute-bottom .btn .ico.location:before {background-position:-15px 0}
+.navbar-absolute-bottom .btn .ico.part:before {background-position:-30px 0}
+.navbar-absolute-bottom .btn .ico.det:before {background-position:-45px 0}
+
+.navbar-absolute-bottom .btn .ico:after {display:none}
+
+.navbar-brand > span {color:#fff}
+
+.navbar .pull-right.trans {transition:all .5s ease; position: relative; z-index: 10}
+.navbar .serchinput {position:absolute; left:0; width:100%; height: 50px; transform: translate3d(100vw,0,0); background: #759ed3; transition:all .5s ease}
+.navbar .serchinput .pull-right.close {opacity:1}
+.navbar .serchinput .inputset {position: absolute; top: 50%; left: 50%; margin: -15px 0 0 calc((70vw/2)/-1); width: 70vw; background: transparent;
+    border: none;}
+.navbar .serchinput .inputset > input {background: transparent; color: #fff}
+
+.navbar-brand {font-size:1.0625em}
+.navbar-app .btn-navbar, .navbar-app .btn {line-height: normal}
+.navbar-absolute-top {border:none;}
+
+.section {width:calc(100vw - 16px); border: 1px solid #d9d9d9; border-radius: 5px}
+.modal-body .section {width:inherit}
+.modal-body {padding:10px}
+
+
+/*tab*/
+.play-tab {}
+.rent-tab {}
+
+
+/*sw*/
+
+.navbar-absolute-top .navbar-brand-center {position: absolute; width:100px; margin-left: 50%; left: -50px; padding-left: 0; padding-top: 16px;}
+.navbar-absolute-top .navbar-brand-center > img {}
+
+.nav-tabs::after {content:""; display: block; clear: both}
+.scrollable.fixed {position:relative}
+.scrollable.fixed .section {margin:0; width: inherit; border:none; background: transparent; padding:0}
+
+.nav-tabs.ty1 {display:flex; background:#1b1b1b}
+.nav-tabs.ty1 > li {float:none; flex:1}
+.nav-tabs.ty1 > li > a {text-align:center; color:rgba(255,255,255,.7)}
+.nav-tabs>li>a:hover,
+.nav-tabs.ty1 > li.active > a, .nav-tabs.ty1 > li.active > a:focus {border:none; background:none; color:#fff}
+
+/*playtab*/
+
+.swiper-container.play {
+	margin: 0 20px;
+	width: inherit;
+	height: 100%;
+}
+.swiper-wrapper.play-wrap {
+
+}
+.swiper-wrapper .swiper-slide.play-pt {
+	height: 100%;
+}
+.swiper-wrapper .swiper-slide.t1 {}
+.swiper-wrapper .swiper-slide.t2 {}
+.swiper-wrapper .swiper-slide.t3 {}
+.swiper-wrapper .swiper-slide .simg {
+	display: block;
+	height: 120vw;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.swiper-wrapper .swiper-slide .simg > img {}
+
+.swiper-wrapper .swiper-slide .play-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.swiper-wrapper .swiper-slide .play-flex .play-name {
+	display: inline-block;
+	height: 60px;
+	width: inherit;
+	font-size: 25px;
+	line-height: 10px;
+	margin-left: 5px;
+}
+.swiper-wrapper .swiper-slide .play-flex .play-name .play-date {
+	display: block;
+	font-size: 12px;
+	line-height: 45px;
+}
+
+.swiper-wrapper .swiper-slide .play-flex .play-btn {
+	margin-top: 20px; 
+	width: 78px; 
+	height: 24px; 
+	border-radius: 5px;
+	overflow: hidden;
+}
+.swiper-wrapper .swiper-slide .play-flex .play-btn > a {
+	display: block; 
+	color: #fff;
+	background: #1b1b1b;
+	height: 100%;
+	text-align: center;
+}
+.play-bullets {margin-top: -30px}
+
+.play-bg {
+	width: 100%; 
+	height: 100vw; 
+	background: #1b1b1b; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: -100;
+}
+
+/*renttab*/
+.rent-wrap {
+	margin: 0 20px;
+	width: inherit;
+	height: 100%;
+}
+.rent-wrap .rent-list {
+	width: 100%;
+	height: inherit;
+	background: #fff;
+	margin-top: 15px;
+}
+.rent-wrap .rent-list > h2 {
+	font-size: 15pt;
+	padding: 10px;
+}
+.rent-wrap .rent-list > h2 > span {
+	color: rgb(0,0,0,0.5);
+	display: block;
+	font-size: 12px;
+}
+.rent-wrap .rent-list > ul {
+	
+}
+.rent-wrap .rent-list > ul > li {
+	padding: 10px;
+}
+.rent-wrap .rent-list > ul > li > a {
+	display: block; height: 100%;
+}
+.rent-wrap .rent-list > ul > li > a > span {
+	
+}
+.rent-wrap .rent-list > ul > li > a > h3 {
+	
+}
+
+.rent-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background: #ccc;
+	z-index: -100;
+}
+
+
+.has-navbar-top .app-body {padding-top:50px}
+.nav-tabs {border:none}
