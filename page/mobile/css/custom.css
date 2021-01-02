@@ -1,44 +1,68 @@
-/*tab*/
-.play-tab {}
-.rent-tab {}
-
-
-/*sw*/
-.rh_logo {
-	width: 5em;
+/* 공통 */
+*{
+	box-sizing: border-box;
+	font-family: 'KoPubWorld Dotum Medium';
 }
-.navbar-absolute-top .navbar-brand-center {position: absolute; width:100px; margin-left: 50%; left: -50px; padding-left: 0; padding-top: 16px;}
-.navbar-absolute-top .navbar-brand-center > img {}
+a{text-decoration: none;}
 
-.nav-tabs::after {content:""; display: block; clear: both}
-.scrollable.fixed {position:relative}
-.scrollable.fixed .section {margin:0; width: inherit; border:none; background: transparent; padding:0}
-
-.nav-tabs.ty1 {display:flex; background:#1b1b1b}
-.nav-tabs.ty1 > li {float:none; flex:1}
-.nav-tabs.ty1 > li > a {text-align:center; color:rgba(255,255,255,.7)}
-.nav-tabs>li>a:hover,
-.nav-tabs.ty1 > li.active > a, .nav-tabs.ty1 > li.active > a:focus {border:none; background:none; color:#fff}
-
-/*playtab*/
-
-.swiper-container.play {
-	margin: 0 20px;
-	width: inherit;
+/* 헤더 */
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: #1b1b1b;
+	z-index: 100;
 }
-.swiper-wrapper.play-wrap {
-
+.header_inner {
+	display: flex;
+	justify-content: center;
+	height: 10vw;
+	line-height: 10vw;
 }
-.swiper-wrapper .swiper-slide.play-pt {}
-.swiper-wrapper .swiper-slide.play-pt.swiper-slide-next {
+.header_inner .logo_main {
+	width: 20vw;
+	height: 100%;
 }
-.swiper-wrapper .swiper-slide.play-pt.swiper-slide-active {
-	margin: 1px;
+.header_inner .logo_main > img{
+	width: 100%;
+}
+.header_inner .btn_wrap {
 }
 
+/* 탭메뉴 */
+.tab_wrapper {
+	margin-bottom: 5vw;
+}
+.tab_wrapper ul.tab_menu {
+	display: flex;
+	height: 10vw;
+	font-size: 4.5vw;
+	line-height: 10vw;
+	text-align: center;
+}
+.tab_wrapper > ul > li {
+	width: 50%;
+	font-family: 'KoPubWorld Dotum Bold';
+	font-weight: 400;
+}
+.tab_wrapper ul.tab_menu li.tab_play{
+	color: #fff;
+}
+.tab_wrapper ul.tab_menu li.tab_rent{
+	color: #777;
+}
+
+/* 공연탭 */
+.swiper-container {
+	width: 90vw;
+}
+.swiper-wrapper {
+}
+.swiper-wrapper .swiper-slide {}
+.swiper-wrapper .swiper-slide.swiper-slide-active {}
 .swiper-wrapper .swiper-slide .simg {
 	display: block;
-	width: 100%;
+	height: 120vw;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -48,165 +72,117 @@
 
 .swiper-wrapper .swiper-slide .play-flex {
 	display: flex;
-	height: 7em;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+	height: 20vw;
+	line-height: 2em;
+	font-size: 4vw;
 }
 .swiper-wrapper .swiper-slide .play-flex .play-name {
-	display: inline-block;
-	height: 60px;
-	width: inherit;
-	font-size: 25px;
-	line-height: 22px;
-	margin-left: 5px;
+	height: 100%;
+	width: 68vw;
+	font-size: 1.8em;
+	letter-spacing: -.1em;
+	font-weight: 300;
+	padding-top: .3em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .swiper-wrapper .swiper-slide .play-flex .play-name .play-date {
 	display: block;
-	font-size: 12px;
+	margin-left: .3em;
+	font-size: .5em;
+	letter-spacing: 0;
 }
 
 .swiper-wrapper .swiper-slide .play-flex .play-btn {
-	width: 78px; 
-	height: 24px; 
-	border-radius: 5px;
+	width: 5em; 
+	height: 1.6em; 
+	border-radius: .3em;
+	background: #1b1b1b;
+	margin-bottom: .8em; 
+	text-align: center;
+	line-height: 1.7em;
 	overflow: hidden;
 }
 .swiper-wrapper .swiper-slide .play-flex .play-btn > a {
 	display: block; 
-	color: #fff;
-	background: #1b1b1b;
 	height: 100%;
-	text-align: center;
-	line-height: 2em;
+	color: #fff;
+	font-family: 'KoPubWorld Dotum Light';
+	font-weight: 100;
 }
 .swiper-pagination.play {
 	position: relative;
-	top:-9em;
-	z-index: 100;
-	text-align: end;
+	top: -28vw;
+	text-align: right;
 	padding-right: 1em;
+	margin-bottom: 1em;
 }
 
-
-
-.play-bg {
-	width: 100%; 
-	height: 100vw; 
-	background: #1b1b1b; 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
+.bg_play {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #1b1b1b;
+	height: 100vw;
+	width: 100vw;
+	z-index: -1;
 }
 
-/*renttab*/
+/* 대관탭 */
 .rent-wrap {
-	margin: 0 20px;
+	margin: 5vw;
 	width: inherit;
 	height: 100%;
 }
 .rent-wrap .rent-list {
 	width: 100%;
-	height: inherit;
 	background: #fff;
-	margin-top: 1em;
-	border-radius: 1em;
+	font-size: 4vw;
+	border-radius: 3vw;
+	margin: 1em 0;
 }
-
-.rent-wrap .rent-list:first-child {
-	margin-top: 2.6em;
-}
-
 .rent-wrap .rent-list > h2 {
-	font-size: 15pt;
-	padding: 10px;
+	font-weight: 500;
+	font-size: 1.2em;
+	padding: 1em;
 }
 .rent-wrap .rent-list > h2 > span {
 	color: rgb(0,0,0,0.5);
 	display: block;
-	font-size: 12px;
+	font-size: .7em;
 }
 .rent-wrap .rent-list > ul {
-	
 }
 .rent-wrap .rent-list > ul > li {
-	padding: 10px;
+	border-top: 2px solid #ccc;
+	height: 3.8em;
+	line-height: 3.8em;
 }
 .rent-wrap .rent-list > ul > li > a {
-	display: block; height: 100%;
+	display: block; 
+	height: 100%;
 }
-.rent-wrap .rent-list > ul > li > a > span {
-	
+.rent-wrap .rent-list > ul > li > a > img {
+	margin-left: 1.5em;
+	margin-bottom: .3em;
+	width: 1.5em;
+	height: 1.5em;
 }
 .rent-wrap .rent-list > ul > li > a > h3 {
-	
+	display: inline-block;
+	margin-left: 1.5em;
+	font-weight: 500;
 }
 
-.rent-bg {
+.bg_rent {
+	background: #ccc;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%; 
-	background: #e5e5e5;
+	height: 100%;
 	z-index: -1;
-	border-top: 6em solid #1b1b1b;
-}
-
-.ui-header {
-	z-index: 10;
-	height: 3rem;
-	background-color: #1b1b1b;
-	border: none;
-}
- 
-ul.tabs {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-	justify-content: space-between;
-    height: 32px;
-    width: 100%;
-}
-ul.tabs li {
-    text-align:center;
-    cursor: pointer;
-    width:50%;
-    height: 3em;
-    line-height: 3rem;
-    background: #1b1b1b;
-    overflow: hidden;
-    position: relative;
-	z-index: 10;
-	color: #ccc;
-}
-ul.tabs li.active {
-	color: #fff;
-}
-
-.tab_container {
-    border: 1px solid #eee;
-    border-top: none;
-    clear: both;
-    float: left;
-    width: 100%;
-}
-.tab_content {
-    padding: 5px;
-    font-size: 12px;
-    display: none;
-	overflow: hidden;
-}
-.tab_container .tab_content ul {
-    width:100%;
-    margin:0px;
-    padding:0px;
-}
-.tab_container .tab_content ul li {
-    padding:5px;
-    list-style:none
-}
- #container {
-    width: 100%;
-    margin: 0 auto;
 }

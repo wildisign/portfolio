@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery-3.1.0.js"></script><!--제이쿼리 연결 -->
+<script src="js/layout.js"></script>
+<script src="js/swiper.min.js"></script>
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/swiper.min.css" />
+<title>롤링홀</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header_inner">
+				<div class="btn_wrap"></div>
+				<div class="logo_main">
+					<img  src="img/logo.png" alt="rollinghall">
+				</div>
+				<div class="btn_wrap"></div>
+			</div>
+			<div class="tab_wrapper">
+				<ul class="tabs tab_menu">
+					<li class="tab_play" rel="tab1">
+						공연
+					</li>
+					<li class="tab_rent" rel="tab2">
+						대관
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="tab_content" id="tab1">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<!-- 1st -->
+						<span class="simg" >
+							<img src="img/poster1.jpg" alt="" />
+						</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.07.25</span>
+								리밋 단독 콘서트
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>
+						</div>
+					</div>																
+					<div class="swiper-slide">
+						<span class="simg">
+							<img src="img/poster2.jpg" alt="" />
+						</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.07.26</span>
+								성영주 단독 콘서트
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>							
+						</div>
+					</div>									
+					<div class="swiper-slide">
+						<span class="simg">
+							<img src="img/poster3.jpg" alt="" />
+						</span>
+						<div class="play-flex">
+							<h3 class="play-name">
+							<span class="play-date">2020.08.02</span>
+								픽보이 TalksOnMusic
+							</h3>
+							<div class="play-btn">
+								<a href="javascript:void(0)">
+									예약하기
+								</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination play"></div>
+			</div>
+			<div class="bg_play"></div>
+		</div>
+		<div class="tab_content" id="tab2">
+			<div class="rent-wrap">
+				<div class="rent-list t1">   		
+					<h2>대관
+						<span>롤링홀 대관 정보와 문의입니다.</span>
+					</h2>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_1.png" alt="대관일정" /><h3>대관 일정</h3>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_3.png" alt="대관안내" /><h3>대관 안내</h3>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_2.png" alt="대관문" /><h3>대관 문의</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="rent-list t2">
+					<h2>무대
+						<span>롤링홀 무대 및 공연장 전체 도면입니다.</span>
+					</h2>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_4.png" alt="무대구조" /><h3>무대 구조(도면)</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="rent-list t3">
+					<h2>음향
+						<span>롤링홀 음향 장비 관련 정보입니다.</span>
+					</h2>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_5.png" alt="음향설비" /><h3>음향 설비(회로)</h3>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_6.png" alt="음향장비" /><h3>음향 장비(리스트)</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="rent-list t4">
+					<h2>조명
+						<span>롤링홀 조명 장비 관련 정보입니다.</span>
+					</h2>
+					<ul>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_5.png" alt="조명설비" /><h3>조명 설비(회로)</h3>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<img src="img/ico_7.png" alt="조명장비" /><h3>조명 장비(리스트)</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bg_rent"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+	  pagination: {
+		el: '.swiper-pagination',
+	  },
+		passiveListeners : false
+	});
+
+	</script>
+</body>
+</html>
