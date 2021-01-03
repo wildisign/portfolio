@@ -1,0 +1,186 @@
+%!Adobe-FontList 1.22
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:KoPubWorldDotumPB
+FamilyName:KoPubWorldDotum_Pro
+StyleName:Bold
+FullName:KoPubWorldDotum_Pro Bold
+MenuName:KoPubWorld돋움체_Pro Bold
+StyleBits:2
+FamilyNameNative:KoPubWorld돋움체_Pro
+StyleNameNative:Bold
+FullNameNative:KoPubWorld돋움체_Pro Bold
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Bold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:3626892
+FileModTime:1583925282
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum_Pro Bold
+NameArray:3,Mac,4,KoPubWorld돋움체_Pro Bold
+NameArray:0,Win,1,KoPubWorldDotum_Pro Bold
+NameArray:0,Win,16,KoPubWorldDotum_Pro
+NameArray:3,Win,1,KoPubWorld돋움체_Pro Bold
+NameArray:3,Win,16,KoPubWorld돋움체_Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldDotumBold
+FamilyName:KoPubWorldDotum
+StyleName:Bold
+FullName:KoPubWorldDotum Bold
+MenuName:KoPubWorld돋움체 Bold
+StyleBits:2
+FamilyNameNative:KoPubWorld돋움체
+StyleNameNative:Bold
+FullNameNative:KoPubWorld돋움체 Bold
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:5146372
+FileModTime:1583925282
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum Bold
+NameArray:3,Mac,4,KoPubWorld돋움체 Bold
+NameArray:0,Win,1,KoPubWorldDotum Bold
+NameArray:0,Win,16,KoPubWorldDotum
+NameArray:3,Win,1,KoPubWorld돋움체 Bold
+NameArray:3,Win,16,KoPubWorld돋움체
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:KoPubWorldDotumPL
+FamilyName:KoPubWorldDotum_Pro
+StyleName:Light
+FullName:KoPubWorldDotum_Pro Light
+MenuName:KoPubWorld돋움체_Pro Light
+StyleBits:0
+FamilyNameNative:KoPubWorld돋움체_Pro
+StyleNameNative:Light
+FullNameNative:KoPubWorld돋움체_Pro Light
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Light.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:3469160
+FileModTime:1583925282
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum_Pro Light
+NameArray:3,Mac,4,KoPubWorld돋움체_Pro Light
+NameArray:0,Win,1,KoPubWorldDotum_Pro Light
+NameArray:0,Win,16,KoPubWorldDotum_Pro
+NameArray:3,Win,1,KoPubWorld돋움체_Pro Light
+NameArray:3,Win,16,KoPubWorld돋움체_Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldDotumLight
+FamilyName:KoPubWorldDotum
+StyleName:Light
+FullName:KoPubWorldDotum Light
+MenuName:KoPubWorld돋움체 Light
+StyleBits:0
+FamilyNameNative:KoPubWorld돋움체
+StyleNameNative:Light
+FullNameNative:KoPubWorld돋움체 Light
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:5187836
+FileModTime:1583925282
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum Light
+NameArray:3,Mac,4,KoPubWorld돋움체 Light
+NameArray:0,Win,1,KoPubWorldDotum Light
+NameArray:0,Win,16,KoPubWorldDotum
+NameArray:3,Win,1,KoPubWorld돋움체 Light
+NameArray:3,Win,16,KoPubWorld돋움체
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:KoPubWorldDotumPM
+FamilyName:KoPubWorldDotum_Pro
+StyleName:Medium
+FullName:KoPubWorldDotum_Pro Medium
+MenuName:KoPubWorld돋움체_Pro Medium
+StyleBits:0
+FamilyNameNative:KoPubWorld돋움체_Pro
+StyleNameNative:Medium
+FullNameNative:KoPubWorld돋움체_Pro Medium
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Medium.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:3646336
+FileModTime:1583925282
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum_Pro Medium
+NameArray:3,Mac,4,KoPubWorld돋움체_Pro Medium
+NameArray:0,Win,1,KoPubWorldDotum_Pro Medium
+NameArray:0,Win,16,KoPubWorldDotum_Pro
+NameArray:3,Win,1,KoPubWorld돋움체_Pro Medium
+NameArray:3,Win,16,KoPubWorld돋움체_Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:KoPubWorldDotumMedium
+FamilyName:KoPubWorldDotum
+StyleName:Medium
+FullName:KoPubWorldDotum Medium
+MenuName:KoPubWorld돋움체 Medium
+StyleBits:0
+FamilyNameNative:KoPubWorld돋움체
+StyleNameNative:Medium
+FullNameNative:KoPubWorld돋움체 Medium
+WritingScript:Korean
+OutlineFileName:D:\wildi\GitHub\portfolio\page\mobile\Font\KoPubWorld Dotum Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:5183376
+FileModTime:1583925282
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,KoPubWorldDotum Medium
+NameArray:3,Mac,4,KoPubWorld돋움체 Medium
+NameArray:0,Win,1,KoPubWorldDotum Medium
+NameArray:0,Win,16,KoPubWorldDotum
+NameArray:3,Win,1,KoPubWorld돋움체 Medium
+NameArray:3,Win,16,KoPubWorld돋움체
+%EndFont
+
