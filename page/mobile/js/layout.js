@@ -1,5 +1,7 @@
 $(window).on('load', function(){
-	$('#loading').hide().delay(400);
+	$('#loading').delay(300).queue(function(){
+		$(this).hide()
+	});
 });
 $(function () {
 	$(".tab_content").hide();
