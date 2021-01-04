@@ -221,17 +221,6 @@ a{text-decoration: none;}
 	#loading-image { 
 	width: 70px;
 	}
-	.bg_pc{
-		z-index: -50;
-		position: fixed;
-		display: block;
-		top: 50%;
-		left: 50%;
-		margin-top: -438px;
-		margin-left: -218px;
-		height: 872px;
-		width: 434px;
-	}
 	.container::before{
 		content: "";
 		display: block;
@@ -246,7 +235,7 @@ a{text-decoration: none;}
 	.container {
 		width: 375px;
 		height: 667px;
-		position:absolute;
+		position:fixed;
 		top: 50%;
 		left: 50%;
 		margin-top: -333.5px;
@@ -254,6 +243,7 @@ a{text-decoration: none;}
 		overflow: auto;
 		-ms-overflow-style: none;
 		border: 2px solid #ccc;
+		z-index: 1;
 	}
 	.container::after{
 		content: "";
