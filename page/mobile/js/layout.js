@@ -1,8 +1,7 @@
+$(window).on('load', function(){
+	$('#loading').hide().delay(400);
+});
 $(function () {
-	$('#loading').delay(500).queue(function(){
-	$(this).hide();
-  });
-	
 	$(".tab_content").hide();
     $(".tab_content:first").show();
     $("ul.tabs > li").click(function () {
