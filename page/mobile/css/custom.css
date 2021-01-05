@@ -27,6 +27,40 @@ a{text-decoration: none;}
 	transform: translate( -50%, -50%);
 	z-index: 100; 
 }
+/* 네비게이션 */
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 70vw;
+	height: 100%;
+	background: #1b1b1b; 
+	z-index: 999;
+	transition:all .5s linear;
+}
+.nav.on {
+	width: 0;
+}
+.nav ul.nav_btn {
+	position: fixed;
+	top: 2em;
+	right: 1em;
+}
+.nav ul > li {
+	width: 3em;
+	height: .1em;
+	background: #fff;
+	margin-top: .5em;
+}
+nav.on ul > li:nth-child(1) {
+	transform: translateY(6px) rotate(-45deg)
+}
+nav.on ul > li:nth-child(2) {
+	visibility:hidden; opacity:0;
+}
+nav.on ul > li:nth-child(3) {
+	transform: translateY(-6px) rotate(45deg)
+}
 
 /* 헤더 */
 .header {
@@ -38,20 +72,18 @@ a{text-decoration: none;}
 	z-index: 100;
 }
 .header_inner {
-	display: flex;
-	justify-content: center;
 	height: 2.4em;
 	line-height: 2.4em;
 }
 .header_inner .logo_main {
+	position: relative;
+	left: 50%;
+	margin-left: -10vw;
 	width: 20vw;
 	height: 100%;
-	border: 1px solid #f00;
 }
 .header_inner .logo_main > img{
 	width: 100%;
-}
-.header_inner .btn_wrap {
 }
 
 /* 탭메뉴 */

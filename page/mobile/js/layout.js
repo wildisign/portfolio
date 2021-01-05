@@ -15,6 +15,17 @@ $(window).on('load', function(){
 			$("#" + activeTab).show()
 		});
 	
+	$('.nav .nav_btn').on("click", function(){
+		var _this = $(this);
+		var _origin = _this.parents('nav');
+		
+		if(_origin.hasClass('on')) {
+			_origin.removeClass('on');
+		} else {
+			_origin.addClass('on');
+		}
+	});			
+		
 	//링크리스트
 	let linkURL = [
 		["https://m.ticket.melon.com/public/index.html#performance.index?prodId=205279"],//1st
