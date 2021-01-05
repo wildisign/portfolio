@@ -39,7 +39,7 @@ a{text-decoration: none;}
 .header_inner {
 	display: flex;
 	justify-content: center;
-	height: 15vw;
+	height: 2.5em;
 	line-height: 10vw;
 }
 .header_inner .logo_main {
@@ -57,7 +57,7 @@ a{text-decoration: none;}
 }
 .tab_wrapper ul.tab_menu {
 	display: flex;
-	height: 15vw;
+	height: 2.5em;
 	font-size: 5vw;
 	line-height: 10vw;
 	text-align: center;
