@@ -40,7 +40,7 @@ a{text-decoration: none;}
 	display: flex;
 	justify-content: center;
 	height: 2.4em;
-	line-height: 10vw;
+	line-height: 2.4em;
 }
 .header_inner .logo_main {
 	width: 20vw;
@@ -59,7 +59,7 @@ a{text-decoration: none;}
 	display: flex;
 	height: 2.4em;
 	font-size: 5vw;
-	line-height: 10vw;
+	line-height: 2.4em;
 	text-align: center;
 }
 .tab_wrapper > ul > li {
