@@ -46,6 +46,7 @@ a{text-decoration: none;}
 .header_inner .logo_main {
 	width: 20vw;
 	height: 100%;
+	border: 1px solid #f00;
 }
 .header_inner .logo_main > img{
 	width: 100%;
