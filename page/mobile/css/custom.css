@@ -16,7 +16,7 @@ a{text-decoration: none;}
 	display: block; 
 	opacity: 0.8; 
 	background-color: #fff; 
-	z-index: 200; 
+	z-index: 400; 
 	text-align: center; 
 } 
 #loading-image { 
@@ -25,41 +25,80 @@ a{text-decoration: none;}
 	left: 50%;
 	width: 50px;
 	transform: translate( -50%, -50%);
-	z-index: 100; 
+	z-index: 500; 
 }
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
 /* 네비게이션 */
-.nav {
+.nav_sec {
+	font-size: 5vw;
+	width: 200vw;
+	height: 100vh;
 	position: fixed;
-	top: 0;
+	left: 0;
 	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	transition:all .4s ease-in-out;
+	border: 1px solid #f00;
+	z-index: 888;
+	visibility: hidden;
+}
+.nav_sec.on {
+	visibility: visible;
+	width: 100vw;
+}
+.nav_sec .nav_btn.gnb {
+	width: 1.5em;
+	height: 1.5em;
+	margin-top: .6em;
+	margin-right: 1em;
+	background: url("../img/btn_gnb_close.png") no-repeat;
+	background-size: cover;
+	z-index: 999;
+	animation: navbtnanirev 1s linear 1;
+	animation-direction: reverse;
+	animation-fill-mode: backwards;
+}
+.nav_sec.on .nav_btn.gnb {
+	animation: navbtnani 1s linear 1;
+}
+
+@keyframes navbtnani {
+	0% {transform: rotate(0deg); opacity: 0}
+	50% {transform: rotate(90deg)}
+	100% {transform: rotate(180deg); opacity: 1;}
+}
+@keyframes navbtnanirev {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(0deg)}
+	100% {transform: rotate(180deg);}
+}
+
+.nav_sec .nav {
 	width: 70vw;
 	height: 100%;
 	background: #1b1b1b; 
 	z-index: 999;
-	transition:all .5s linear;
+	font-size: 4vw;
 }
-.nav.on {
-	width: 0;
+.bg_nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #1b1b1b;
+	display: none;
 }
-.nav ul.nav_btn {
-	position: fixed;
-	top: 2em;
-	right: 1em;
-}
-.nav ul > li {
-	width: 3em;
-	height: .1em;
-	background: #fff;
-	margin-top: .5em;
-}
-nav.on ul > li:nth-child(1) {
-	transform: translateY(6px) rotate(-45deg)
-}
-nav.on ul > li:nth-child(2) {
-	visibility:hidden; opacity:0;
-}
-nav.on ul > li:nth-child(3) {
-	transform: translateY(-6px) rotate(45deg)
+.bg_nav.on {
+	display: block;
+	opacity: .5;
 }
 
 /* 헤더 */
@@ -85,10 +124,23 @@ nav.on ul > li:nth-child(3) {
 .header_inner .logo_main > img{
 	width: 100%;
 }
-
+.header_inner ul.nav_btn.head {
+	position: fixed;
+	top: .6em;
+	right: .8em;
+}
+.header_inner ul > li {
+	width: 1.5em;
+	height: .2em;
+	background: #fff;
+	margin-bottom: .25em;
+	border-radius: .1em;
+}
 /* 탭메뉴 */
 .tab_wrapper {
 }
+
+
 .tab_wrapper ul.tab_menu {
 	display: flex;
 	height: 2.4em;
@@ -247,7 +299,6 @@ nav.on ul > li:nth-child(3) {
 .bg_pc {
 	display: none;
 }
-
 @media (min-width: 1025px) {
 	#loading-image { 
 		width: 70px;
