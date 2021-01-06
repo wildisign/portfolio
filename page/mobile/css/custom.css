@@ -23,8 +23,8 @@ a{text-decoration: none;}
 	position: absolute; 
 	top: 50%; 
 	left: 50%;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	transform: translate( -50%, -50%);
 	z-index: 500;
 	text-indent: 999px; 
@@ -34,7 +34,7 @@ a{text-decoration: none;}
 	animation: loader .5s infinite steps(3);
 }
 @keyframes loader {
-to { background-position: -150px 0; }
+to { background-position: -300px 0; }
 }
 
 .container {
