@@ -28,12 +28,6 @@ a{text-decoration: none;}
 	z-index: 500; 
 }
 
-.container {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-}
-
 /* 네비게이션 */
 .nav_sec {
 	font-size: 5vw;
@@ -45,7 +39,6 @@ a{text-decoration: none;}
 	display: flex;
 	justify-content: flex-end;
 	transition:all .4s ease-in-out;
-	border: 1px solid #f00;
 	z-index: 888;
 	visibility: hidden;
 }
