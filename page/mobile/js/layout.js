@@ -38,5 +38,4 @@ $(window).on('load', function(){
 		window.open(linkURL[j]); 
 		return false;
 	});	
-	
 });
