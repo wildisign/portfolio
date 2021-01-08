@@ -7,4 +7,5 @@ $(function(){
 		window.open(linkURL[j]); 
 		return false;
 	});	
+	$("td").not(".month > td").addClass("days");
 })
