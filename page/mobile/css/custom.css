@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 	font-family: 'KoPubWorld Dotum Medium';
 }
+.container {
+	font-size: 4.5vw;
+}
+
 a{text-decoration: none;}
 
 .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
@@ -30,7 +34,6 @@ a{text-decoration: none;}
 
 /* 네비게이션 */
 .nav_sec {
-	font-size: 5vw;
 	width: 200vw;
 	height: 100vh;
 	position: fixed;
@@ -74,11 +77,11 @@ a{text-decoration: none;}
 }
 
 .nav_sec .nav {
-	width: 70vw;
+	width: 70%;
 	height: 100%;
 	background: #1b1b1b; 
 	z-index: 999;
-	font-size: 4vw;
+	font-size: 1em;
 }
 .bg_nav {
 	position: absolute;
@@ -100,25 +103,26 @@ a{text-decoration: none;}
 	top: 0;
 	left: 0;
 	background: #1b1b1b;
-	font-size: 5vw;
+	font-size: 1.2em;
 	z-index: 100;
 }
 .header_inner {
+	position: relative;
 	height: 2.4em;
 	line-height: 2.4em;
 }
 .header_inner .logo_main {
 	position: relative;
 	left: 50%;
-	margin-left: -10vw;
-	width: 20vw;
+	margin-left: -2.2em;
+	width: 4.4em;
 	height: 100%;
 }
 .header_inner .logo_main > img{
 	width: 100%;
 }
 .header_inner ul.nav_btn.head {
-	position: fixed;
+	position: absolute;
 	top: .6em;
 	right: .8em;
 }
@@ -154,16 +158,15 @@ a{text-decoration: none;}
 
 /* 공연탭 */
 .swiper-container {
-	width: 90vw;
-	font-size: 4.5vw;
+	width: 20.5em;
 }
-.swiper-wrapper {
-}
+.swiper-wrapper {}
 .swiper-wrapper .swiper-slide {}
 .swiper-wrapper .swiper-slide.swiper-slide-active {}
 .swiper-wrapper .swiper-slide .simg {
 	display: block;
-	height: 120vw;
+	width: 100%;
+	height: 28.5em;
 	border-radius: 1em;
 	overflow: hidden;
 }
@@ -175,12 +178,12 @@ a{text-decoration: none;}
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	height: 20vw;
-	line-height: 8vw;
+	height: 5em;
+	line-height: 2em;
 }
 .swiper-wrapper .swiper-slide .play-flex .play-name {
 	height: 100%;
-	width: 68vw;
+	width: 8em;
 	font-size: 1.8em;
 	letter-spacing: -.1em;
 	font-weight: 300;
@@ -215,7 +218,7 @@ a{text-decoration: none;}
 }
 .swiper-pagination.play {
 	position: relative;
-	top: -28vw;
+	top: -7em;
 	text-align: right;
 	padding-right: 1em;
 	margin-bottom: 1em;
@@ -234,15 +237,14 @@ a{text-decoration: none;}
 
 /* 대관탭 */
 .rent-wrap {
-	margin: 5vw;
+	margin: .8em;
 	width: inherit;
 	height: 100%;
 }
 .rent-wrap .rent-list {
 	width: 100%;
 	background: #fff;
-	font-size: 4vw;
-	border-radius: 3vw;
+	border-radius: .8em;
 	margin: 1em 0;
 	box-shadow: .1em .1em .3em .1em #ccc;
 }
@@ -308,7 +310,7 @@ a{text-decoration: none;}
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 125%;
 		background: #fff;
 		z-index: -200;
 	}
@@ -323,189 +325,37 @@ a{text-decoration: none;}
 		-ms-overflow-style: none;
 		border: 5px solid #fff;
 		z-index: 1;
+		font-size: 16px;
 	}
 	.container::-webkit-scrollbar {
 		display: none;
 	}
-	
-	/* 헤더 */
-	.header {
-		position: sticky;
-		top: 0;
+	.nav_sec {
+		width: calc(375px * 2);
+		height: 667px;
+		position: fixed;
 		left: 0;
-		background: #1b1b1b;
-		z-index: 100;
-	}
-	.header_inner {
+		right: 0;
 		display: flex;
-		justify-content: center;
-		height: 50px;
-		line-height: 50px;
+		justify-content: flex-end;
+		transition:all .4s ease-in-out;
+		z-index: 888;
+		visibility: hidden;
 	}
-	.header_inner .logo_main {
-		width: 80px;
-		height: 100%;
+	.nav_sec.on {
+		visibility: visible;
+		width: 375px;
 	}
-	.header_inner .logo_main > img{
-		width: 100%;
+	.swiper-wrapper .swiper-slide {
+		max-width: 328px;
 	}
-	.header_inner .btn_wrap {
-	}
-
-	/* 탭메뉴 */
-	.tab_wrapper {
-	}
-	.tab_wrapper ul.tab_menu {
-		height: 50px;
-		font-size: 12pt;
-		line-height: 50px;
-	}
-	.tab_wrapper > ul > li {
-		width: 50%;
-		font-family: 'KoPubWorld Dotum Bold';
-		font-weight: 400;
-	}
-	.tab_wrapper > ul > li:hover {
-		cursor: pointer;
-	}
-	.tab_wrapper ul.tab_menu li.tab_play{
-		color: #fff;
-	}
-	.tab_wrapper ul.tab_menu li.tab_rent{
-		color: #777;
-	}
-
-	/* 공연탭 */
-	.swiper-container {
-		width: 340px;
-		font-size: .8vw;
-	}
-	.swiper-wrapper {
-	}
-	.swiper-wrapper .swiper-slide {}
-	.swiper-wrapper .swiper-slide.swiper-slide-active {}
-	.swiper-wrapper .swiper-slide .simg {
-		display: block;
-		height: 450px;
-		border-radius: 10px;
-		overflow: hidden;
-	}
-	.swiper-wrapper .swiper-slide .simg > img {
-		width: 100%;
-	}
-
-	.swiper-wrapper .swiper-slide .play-flex {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		height: 4vw;
-		line-height: 2em;
-	}
-	.swiper-wrapper .swiper-slide .play-flex .play-name {
-		height: 100%;
-		width: 250px;
-		font-size: 20pt;
-		letter-spacing: -.1em;
-		font-weight: 300;
-		padding-top: .3em;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	.swiper-wrapper .swiper-slide .play-flex .play-name .play-date {
-		display: block;
-		margin-left: .3em;
-		font-size: 10pt;
-		letter-spacing: 0;
-	}
-
-	.swiper-wrapper .swiper-slide .play-flex .play-btn {
-		width: 70px; 
-		height: 25px; 
-		border-radius: .3em;
-		background: #1b1b1b;
-		margin-bottom: .8em; 
-		text-align: center;
-		line-height: 25px;
-		overflow: hidden;
-	}
-	.swiper-wrapper .swiper-slide .play-flex .play-btn > a {
-		display: block; 
-		height: 100%;
-		color: #fff;
-		font-family: 'KoPubWorld Dotum Light';
-		font-weight: 100;
-		font-size: 1.1em;
-	}
-	.swiper-pagination.play {
-		position: relative;
-		top: -85px;
-		text-align: right;
-		padding-right: 1em;
-		margin-bottom: 1em;
-	}
-
-	.bg_play {
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: #1b1b1b;
-		height: 60%;
-		width: 100%;
-		z-index: -100;
-	}
-
-	/* 대관탭 */
-	.rent-wrap {
-		margin: 1vw;
-		width: inherit;
-		height: 100%;
-	}
-	.rent-wrap .rent-list {
-		width: 100%;
-		background: #fff;
-		font-size: 12pt;
-		border-radius: 10pt;
-	}
-	.rent-wrap .rent-list > h2 {
-		font-weight: 500;
-		font-size: 1.2em;
-		padding: 1em;
-	}
-	.rent-wrap .rent-list > h2 > span {
-		color: rgb(0,0,0,0.5);
-		display: block;
-		font-size: 10pt;
-	}
-	.rent-wrap .rent-list > ul {
-	}
-	.rent-wrap .rent-list > ul > li {
-		border-top: 2px solid #ccc;
-		height: 3.8em;
-		line-height: 3.8em;
-	}
-	.rent-wrap .rent-list > ul > li > a {
-		display: block; 
-		height: 100%;
-	}
-	.rent-wrap .rent-list > ul > li > a > img {
-		margin-left: 1.5em;
-		margin-bottom: .3em;
-		width: 1.5em;
-		height: 1.5em;
-	}
-	.rent-wrap .rent-list > ul > li > a > h3 {
-		display: inline-block;
-		margin-left: 1.5em;
-		font-weight: 500;
-	}
-
 	.bg_rent {
-		position: absolute;
+		background: #e5e5e5;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 955px;
-		z-index: -100;
+		height: 965px;
+		z-index: -1;
 	}
 }

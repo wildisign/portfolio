@@ -81,23 +81,23 @@ button {
  font-style: normal;
  font-weight: 300;
  src: local('KoPubWorld Dotum Light'), local('KoPubWorld Dotum_Pro Light');
- src: url("../font/KoPubWorld Dotum Light.otf"),
-url("../font/KoPubWorld Dotum Light.ttf") format('truetype');
+ src: url("../../../font/KoPubWorld Dotum Light.otf"),
+url("../../../font/KoPubWorld Dotum Light.ttf") format('truetype');
 }
 @font-face {
  font-family: 'KoPubWorld Dotum Medium';
  font-style: normal;
  font-weight: 400;
  src: local('KoPubWorld Dotum Medium'), local('KoPubWorld Dotum_Pro Medium');
- src: url("../font/KoPubWorld Dotum Medium.otf"),
-url("../font/KoPubWorld Dotum Medium.ttf") format('truetype');
+ src: url("../../../font/KoPubWorld Dotum Medium.otf"),
+url("../../../font/KoPubWorld Dotum Medium.ttf") format('truetype');
 }
 @font-face {
  font-family: 'KoPubWorld Dotum Bold';
  font-style: normal;
  font-weight: 500;
  src: local('KoPubWorld Dotum Bold'), local('KoPubWorld Dotum_Pro Bold');
- src: url("../font/KoPubWorld Dotum Bold.otf"),
-url("../font/KoPubWorld Dotum Bold.ttf") format('truetype');
+ src: url("../../../font/KoPubWorld Dotum Bold.otf"),
+url("../../../font/KoPubWorld Dotum Bold.ttf") format('truetype');
 }
 

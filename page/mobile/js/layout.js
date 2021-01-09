@@ -3,18 +3,31 @@ $(window).on('load', function(){
 		$(this).hide()
 	});
 });
-	$(function () {
+
+$(function () {
 		$(".tab_content").hide();
 		$(".tab_content:first").show();
-		$("ul.tabs > li").click(function () {
+		if($(window).width() >= 1025) {
+			$(".container").css("overflow", "hidden");
+			   console.log("히든");
+		   }
+			$("ul.tabs > li").click(function () {
 			$("ul.tabs > li").removeClass("active").css("color", "#777");
 			//$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
 			$(this).addClass("active").css("color", "#fff");
 			$(".tab_content").hide()
 			var activeTab = $(this).attr("rel");
 			$("#" + activeTab).show()
+		if($(window).width() >= 1025 && $('.tab_play').hasClass('active')) {
+			$(".container").css("overflow", "hidden");
+			   console.log("히든");
+		   }
+		if($(window).width() >= 1025 && $('.tab_rent').hasClass('active')) {
+			$(".container").css("overflow", "auto");
+			   console.log("오토");
+		   }
 		});
-	
+
 	$('.header_inner .nav_btn').on("click", function(){
 		$('.nav_sec').addClass('on');
 		$('.nav_sec .bg_nav').addClass('on');
@@ -37,5 +50,9 @@ $(window).on('load', function(){
         console.log(j);
 		window.open(linkURL[j]); 
 		return false;
-	});	
+	});
+
 });
+			   
+					   
+					   

@@ -1,4 +1,9 @@
 // JavaScript Document
+$(window).on('load', function(){
+	$('#loading').delay(300).queue(function(){
+		$(this).hide()
+	});
+});
 $(function(){
 	$(".events_tag").click(function(event) {
 		// good
