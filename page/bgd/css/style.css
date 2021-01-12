@@ -529,6 +529,7 @@ nav.on .topbtnset .btn > span:nth-child(3) {
 #scroll-section-2 .sec2-wrap.page3 .bgd-warp {
 	text-align: center;
 	margin-top: 50vh;
+	transform: translateY(-50%);
 }
 #scroll-section-2 .sec2-wrap.page3 .bgd-warp > .bgd-item {
 	margin-top: 1rem;
@@ -543,15 +544,28 @@ nav.on .topbtnset .btn > span:nth-child(3) {
 }
 #scroll-section-2 .sec2-wrap.page3 .bgd-warp > p {}
 
-#scroll-section-2 .sec2-wrap.page3 .footer {
-	position: absolute;
-	bottom: -1.8rem;
-	left: 2rem;
+
+/* 푸터 */
+
+.footer {
+	position: fixed;
+	bottom: -5vw;
+	left: 0;
+	height: 5vw;
+	width: 100%;
+	background: #fff; 
 	font-size: .7em;
 	color: #777;
 	letter-spacing: .1em;
+	padding: 2vw;
+	transition: .4s linear;
 }
-#scroll-section-2 .sec2-wrap.page3 .footer > p.foot-stxt {}
+
+.footer.on {
+	bottom: 0;
+}
+.footer > p.foot-stxt {
+}
 
 
 

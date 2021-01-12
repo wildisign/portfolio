@@ -75,5 +75,13 @@ $(function(){
 
 		}
 	}
-
 });
+window.addEventListener('scroll', () => { // 삼각형 함수
+		yOffset = window.pageYOffset;
+		if((yOffset == 0) == false) {
+			$('.header_inner .logo > img').css('visibility', 'hidden');
+		} else {
+			$('.header_inner .logo > img').css('visibility', 'visible');
+		}
+})
+

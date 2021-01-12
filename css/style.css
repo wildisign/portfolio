@@ -18,7 +18,7 @@
 	mix-blend-mode: difference;
 }
 .header_inner {position: relative; height: 80px; width: 1280px; margin:0 auto}
-.header_inner .logo {position: absolute; top:40px;}
+.header_inner .logo {position: absolute; top:40px; visibility: visible;}
 .header_inner .nav {position: absolute; top:80px; left: 800px;}
 .header_inner .nav > ul {overflow: hidden; margin:0; padding:0}
 .header_inner .nav > ul > li {float: left; list-style: none;}
@@ -105,46 +105,6 @@
     translateX(calc(var(--mouse-x) * 0.01px))
     translateY(calc(var(--mouse-y) * 0.01px));
 }
-/*
-.page.p0 .bgset .bg {
-	width: 100%;
-	height: 2458px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	mix-blend-mode: multiply;
-}
-.page.p0 .bgset .bg.t1 {
-	transform:
-    translateX(calc(var(--mouse-x) * 0.07px))
-    translateY(calc(var(--mouse-y) * 0.07px));
-}
-.page.p0 .bgset .bg.t2 {
-	transform:
-    translateX(calc(var(--mouse-x) * 0.05px))
-    translateY(calc(var(--mouse-y) * 0.05px));
-}
-.page.p0 .bgset .bg.t3 {
-	transform:
-    translateX(calc(var(--mouse-x) * 0.02px))
-    translateY(calc(var(--mouse-y) * 0.02px));
-}
-.page.p0 .bgset .bg.t4 {
-	transform:
-    translateX(calc(var(--mouse-x) * 0.01px))
-    translateY(calc(var(--mouse-y) * 0.01px));
-}
-.page.p0 .bgset .bg > img {
-	width: 130%;
-	height: auto;
-	min-width: 1280px;
-	margin-left: calc(100% / -5);
-	margin-top: calc(100% / -20)
-}
-*/
-
-
-
 
 .page.p0 .cont_outer {
 	height: 920px; 
@@ -275,9 +235,10 @@
 .page.p1 .pfwrap .grid {
 	flex:1;
 	padding-left:70px;
+	background: #fff;
+	z-index: 999;
 }
 .page.p1 .pfwrap .grid .stxt {
-	background: #fff;
 }
 .page.p1 .pfwrap .grid:nth-child(1) {
 	flex:none; 
@@ -311,6 +272,35 @@
 .page.p1 .pfwrap .grid.ty1 .namebox {margin:34px 0 0 29px;}
 .page.p1 .pfwrap .grid.ty1 .namebox .stxt {margin-top:23px;}
 
+.skill_list{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.skill {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	align-items: center;
+}
+.bar {
+	width: 100px;
+	height: 10px;
+	overflow: hidden;
+}
+.full {
+	float: left;
+	height: 100%;
+	width: 20px;
+}
+
+.bar .full:nth-child(1) {background-color: #000;}
+.bar .full:nth-child(2) {background-color: #000;}
+.bar .full:nth-child(3) {background-color: #000;}
+.bar .full:nth-child(4) {background-color: #ccc;}
+.bar .full:nth-child(5) {background-color: #ccc;}
 
 .page.p2{
 	margin-top:-160px;
@@ -352,6 +342,19 @@
 .page.p2 .grid_outer .pgrid dl dd .circle {
 	display:inline-block; height:22px; width:22px;
 	border-radius:75px; background:#f00;
+}
+.page.p2.t1 .grid_outer .pgrid dl dd .circle.ty1 {
+	background: #fff;
+	border: 1px solid #000;
+}
+.page.p2.t1 .grid_outer .pgrid dl dd .circle.ty2 {
+	background: #000;
+}
+.page.p2.t2 .grid_outer .pgrid dl dd .circle.ty1 {
+
+}
+.page.p2.t2 .grid_outer .pgrid dl dd .circle.ty2 {
+
 }
 
 .page.p2 .grid_outer .pgrid .btnset{

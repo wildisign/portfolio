@@ -74,7 +74,7 @@
 		},
 		{ 
 			type : 'sticky',
-			heightNum : 8,
+			heightNum : 9,
 			scrollHeight : 0,
 			objs : { 
 				container : document.querySelector("#scroll-section-2"),
@@ -88,10 +88,10 @@
 				bg : document.querySelector('#scroll-section-2 .sec2-wrap.page3'),
 			},
 			values : {
-				sec02_imgA_transY : [200,-200, {start: section02_Point[0][0], end: section02_Point[0][1]}],
-				sec02_imgB_transY : [300,-300, {start: section02_Point[1][0], end: section02_Point[1][1]}],
-				sec02_imgA_scale : [1.3,1, {start: section02_Point[2][0], end: section02_Point[2][1]}],
-				sec02_imgB_scale : [1.3,1, {start: section02_Point[3][0], end: section02_Point[3][1]}],
+				sec02_imgA_transY : [700,-700, {start: section02_Point[0][0], end: section02_Point[0][1]}],
+				sec02_imgB_transY : [1000,-1000, {start: section02_Point[1][0], end: section02_Point[1][1]}],
+				sec02_imgA_scale : [1.4,1, {start: section02_Point[2][0], end: section02_Point[2][1]}],
+				sec02_imgB_scale : [1.5,1, {start: section02_Point[3][0], end: section02_Point[3][1]}],
 				sec02_imgA_opacity_in: [0, 1, {start:section02_Point[4][0], end: section02_Point[4][1]}],
 				sec02_imgB_opacity_in: [0, 1, {start:section02_Point[5][0], end: section02_Point[5][1]}],
 				sec02_imgA_opacity_out: [1, 0, {start:section02_Point[6][0], end: section02_Point[6][1]}],
@@ -234,8 +234,10 @@
 		sceneInfo[1].objs.imgA_simg.style.transform = (`translateY(${scene01_imgA_transY_in}px)`);
 		sceneInfo[1].objs.imgB_simg.style.transform = (`translateY(${scene01_imgB_transY_in}px)`);
 		
-		console.log(totalScrollRatio);
-		
+		//console.log(sceneInfo[1].scrollHeight);
+		//console.log(yOffset);
+		//console.log(totalScrollHeight);
+
 		//objs.messageC1.setAttribute("style", 'opacity :' + sec00_msgC1_opacity_in + '; transform : translateY(' + sec00_msgC1_translate_in + 'px)');
 		
 
@@ -459,66 +461,22 @@
 		playAnimation();
 	}
 	
+
 	
 	window.addEventListener('scroll', () => { // 삼각형 함수
 		yOffset = window.pageYOffset;
 		scrollLoop();
-		/*
-		console.log(yOffset);
-		if(yOffset > 0) { 
-			$('.navlist > li').addClass("on");
-		console.log('온');
-			$('.navlist > li').off();
-		console.log('오프');
-			$('.logo > h3').addClass("on");
-		} 	
-		else { 	
-			$('.navlist > li').addClass("reverse");
-		console.log('리버스');
-			$('.navlist > li:first.reverse').one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-			   $('.navlist > li').removeClass("on reverse");
-		console.log('제거');
-			});
-			$('.logo > h3').removeClass("on");
-		}
-		*/
 
+	  if (($(document).height() - $(window).height()) - yOffset < 1 ) {
+		console.log('스크롤바 끝 도달');
+		$('.footer').addClass('on');
+	   } else {
+		$('.footer').removeClass('on');
+	   }
+		//console.log("Y오프셋 == " + yOffset);
+		console.log(($(document).height() - $(window).height()) - yOffset);
 		
 		
-		/*
-		
-
-		navico.hover(function(){
-		navico.find('li').css('background','linear-gradient(to top, #fff 0, #96825d 40%, #96825d 60%, #fff 100%)');
-		navico.find('li:nth-child(1)').css('left','-0.23rem');
-		navico.find('li:nth-child(2)').css('left','0.13rem');
-		navico.find('li:nth-child(3)').css('left','-0.23rem');
-		},
-		function(){
-		navico.find('li').css('background','linear-gradient(to top, #fff 0, #000 40%, #000 60%, #fff 100%)');
-		navico.find('li:nth-child(1)').css('left','0rem');
-		navico.find('li:nth-child(2)').css('left','0rem');
-		navico.find('li:nth-child(3)').css('left','0rem');
-		});
-			console.log("2");
-		
-		navico.off().on("click", function(e){
-		e.preventDefault();	
-		var _this = $(this);
-		var _origin = _this.parents('.nav');
-
-		if(_origin.hasClass('onclick')) {
-			_origin.removeClass('onclick');
-		} else {
-			_origin.addClass('onclick');
-		}
-	
-			
-		console.log("3");
-			
-		});	
-
-		*/
 		
 		var navico = $('.header .header_inner .nav_ico');
 		var _this = $(this);
@@ -572,7 +530,6 @@
 		
 		$('.nav .nav_ico > ul > li').off();
 		
-			console.log("4");
 		function anireverse() { 
 			//console.log("에니리버스가 제대로 타나?");
 			$('.logo > h3').removeClass("on");	
