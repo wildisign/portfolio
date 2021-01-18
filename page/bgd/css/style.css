@@ -284,13 +284,6 @@ nav.on .topbtnset .btn > span:nth-child(3) {
 
 /* 섹션 - 0 */
 
-#scroll-section-0 h1 {
-	position: relative;
-	top: -10vh;
-	z-index: 5;
-	font-size: 4rem;
-	text-align: center;
-}
 
 #scroll-section-0 .main-img-wrap {
 	--gradient-progress_sec00_01: 0;

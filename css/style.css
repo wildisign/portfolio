@@ -221,7 +221,7 @@
 .page.p1 {margin-top:-350px;}
 
 .page.p1 .wrap_outer{
-	height:920px; border:1px solid #1D1AF4;
+	height:920px;
 }
 .page.p1 .pfwrap {
 	position:relative;
@@ -405,4 +405,9 @@
 	background-size:cover;
 	z-index:0;
 }
-
+.page.p2.t2 .grid_outer .mgrid .mockup_wrap > img {
+	position: absolute;
+	top: 150px;
+	left: 180px;
+	width: 780px;
+}

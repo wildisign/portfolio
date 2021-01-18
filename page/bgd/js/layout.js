@@ -474,7 +474,7 @@
 		$('.footer').removeClass('on');
 	   }
 		//console.log("Y오프셋 == " + yOffset);
-		console.log(($(document).height() - $(window).height()) - yOffset);
+		//console.log(($(document).height() - $(window).height()) - yOffset);
 		
 		
 		
@@ -558,11 +558,12 @@
 				}
 
 			});			
-		
+
 		if($('.navlist > li').hasClass("on") && yOffset == 0) { 
 			anireverse();			
-		}		
+		}	
 		
+		console.log($(this).scrollTop());
 
 		
 		
