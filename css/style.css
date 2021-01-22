@@ -14,16 +14,21 @@
 	position:fixed; 
 	top:0; left:0; right:0; 
 	height:80px; 
-	z-index: 99;
+	z-index: 999;
 	mix-blend-mode: difference;
 }
 .header_inner {position: relative; height: 80px; width: 1280px; margin:0 auto}
 .header_inner .logo {position: absolute; top:40px; visibility: visible;}
-.header_inner .nav {position: absolute; top:80px; left: 800px;}
+.header_inner .nav {position: absolute; top:80px; left: 880px;}
 .header_inner .nav > ul {overflow: hidden; margin:0; padding:0}
 .header_inner .nav > ul > li {float: left; list-style: none;}
 .header_inner .nav > ul > li > a {text-decoration: none; color:#fff; }
-.header_inner .nav > ul > li + li {margin-left:44px}
+.header_inner .nav > ul > li + li {margin-left:50px}
+.nav-up { 
+	top: -130px;
+	transition-duration: .3s;
+	transition-timing-function: linear;
+}
 
 .btnset {display:inline-block; z-index:100; position:relative;}
 .header_inner .btnset .btn {
@@ -218,17 +223,16 @@
 
 /* 2페이지 */
 
-.page.p1 {margin-top:-350px;}
+.page.p1 {
+}
 
 .page.p1 .wrap_outer{
-	height:920px;
+	height: 700px;
+	padding: 200px 100px 0 100px;
 }
 .page.p1 .pfwrap {
-	position:relative;
 	width:1280px;
 	height:500px;
-	left:50%;
-	margin:345px 0 0 -640px;
 	display: flex; 
 	justify-content: space-between;
 }
@@ -236,13 +240,13 @@
 	flex:1;
 	padding-left:70px;
 	background: #fff;
-	z-index: 999;
+	z-index: 99;
 }
 .page.p1 .pfwrap .grid .stxt {
 }
 .page.p1 .pfwrap .grid:nth-child(1) {
 	flex:none; 
-	width: 250px; 
+	width: 265px; 
 	padding:0;
 }
 .page.p1 .pfwrap .grid:nth-child(2) {
@@ -289,21 +293,16 @@
 	width: 100px;
 	height: 10px;
 	overflow: hidden;
+	background-color: #ccc;
 }
 .full {
 	float: left;
 	height: 100%;
 	width: 20px;
+	background-color: #000;
 }
 
-.bar .full:nth-child(1) {background-color: #000;}
-.bar .full:nth-child(2) {background-color: #000;}
-.bar .full:nth-child(3) {background-color: #000;}
-.bar .full:nth-child(4) {background-color: #ccc;}
-.bar .full:nth-child(5) {background-color: #ccc;}
-
 .page.p2{
-	margin-top:-160px;
 	height:1489px; 
 	background:url('../img/bg2.png') no-repeat center;
 	background-size:cover;

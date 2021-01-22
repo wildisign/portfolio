@@ -461,7 +461,20 @@
 		playAnimation();
 	}
 	
-
+    $('#navbtn1').on('click', function(){
+        $('html, body').animate({
+            scrollTop: $('#page1').offset().top
+        }, 1000);
+    });
+    $('#navbtn2').on('click', function(){
+        $('html, body').animate({
+            scrollTop: $(document).height() - $(window).height()
+        }, 1000);
+    });
+	$("#navbtn3").on('click', function(){
+		location.href = 'page/menu/index.html'; 
+		return false;
+	});
 	
 	window.addEventListener('scroll', () => { // 삼각형 함수
 		yOffset = window.pageYOffset;
