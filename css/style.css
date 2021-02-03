@@ -128,8 +128,10 @@
 	position:absolute;
 	display:inline-block;
 	text-align:center;
-	transition: 1.3s ease-in-out;
+	transition: 1.2s linear;
 	z-index:100;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
 }
 .page.p0 .cont_outer .cont_inner .section .stxt.main .stxt_name {
 	position:absolute;
@@ -138,7 +140,6 @@
 	right:0;
 	font-size: 0.4em;
 	letter-spacing: 0.5em;
-	font-weight: 100;
 }
 .page.p0 .cont_outer .cont_inner .section .stxt .stxt_sub {
 	position:absolute;
@@ -147,7 +148,6 @@
 	right:0;
 	font-size: 0.4em;
 	letter-spacing: 0.5em;
-	font-weight: 100;
 	color: #fff7e2;
 }
 .page.p0 .cont_outer .cont_inner .section.sec0 .stxt{
