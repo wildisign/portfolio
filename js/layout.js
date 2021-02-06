@@ -106,12 +106,12 @@ $(function(){
     });
     $('#navbtn2').on('click', function(){
         $('html, body').animate({
-            scrollTop: $('#page2').offset().top
+            scrollTop: $('#page2').offset().top + 50
         }, 500);
     });
     $('#navbtn3').on('click', function(){
         $('html, body').animate({
-            scrollTop: $('#page3').offset().top
+            scrollTop: $('#page3').offset().top + 50
         }, 500);
     });
 	

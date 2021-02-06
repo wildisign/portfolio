@@ -342,6 +342,26 @@
 	display:inline-block; height:22px; width:22px;
 	border-radius:75px; background:#f00;
 }
+.page.p2 .grid_outer .pgrid dl dd .wrap_btn_work {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	margin-top: 30px;
+}
+.page.p2 .grid_outer .pgrid dl dd .wrap_btn_work .btn_work {
+	background: #000;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+}
+.page.p2 .grid_outer .pgrid dl dd .wrap_btn_work .btn_work > a {
+	display: block;
+	color: #fff;
+	width: 100%;
+	letter-spacing: 1px;	
+}
 .page.p2.t1 .grid_outer .pgrid dl dd .circle.ty1 {
 	background: #fff;
 	border: 1px solid #000;
@@ -356,36 +376,6 @@
 
 }
 
-.page.p2 .grid_outer .pgrid .btnset{
-	display:inline-block;
-	position:relative;
-	margin:3px 0 0 -15px;
-}
-.page.p2 .grid_outer .pgrid .btnset .btn {
-	position:absolute;
-	height:32px;
-	display:inline-block;
-	background:url('../img/brush_btn.png') no-repeat 0 0;
-	background-size:auto 32px;
-	vertical-align:middle;
-}
-.page.p2 .grid_outer .pgrid .btnset .btn > a {
-	display: block;
-	height: 100%;
-	z-index: 50;
-}
-.page.p2 .grid_outer .pgrid .btnset .btn.detailview {
-	width:133px;
-	background-position:0 0;
-	left:0px;
-	top:0px;
-}
-.page.p2 .grid_outer .pgrid .btnset .btn.movepage {
-	width:146px;
-	background-position:-133px 0;
-	left:145px;
-	top:0px;
-}
 .page.p2 .grid_outer .mgrid {
 	position:absolute;
 	left:300px; height: 785px;
