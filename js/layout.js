@@ -19,6 +19,9 @@ $(function(){
 		[3],//Jquery
 		[5],//PS
 		[4],//AI
+		[3],//ID
+		[3],//Pr
+		[2],//AF
 	]
 	
 	var barHtml = $( '.skill.html > .bar > div' );
@@ -26,12 +29,18 @@ $(function(){
 	var barJquery = $( '.skill.jquery > .bar > div' );
 	var barPs = $( '.skill.ps > .bar > div' );
 	var barAi = $( '.skill.ai > .bar > div' );
+	var barId = $( '.skill.id > .bar > div' );
+	var barPr = $( '.skill.pr > .bar > div' );
+	var barAf = $( '.skill.af > .bar > div' );
 	
 	barHtml.slice( 0, skillBar[0] ).addClass('full');
 	barCss.slice( 0, skillBar[1] ).addClass('full');
 	barJquery.slice( 0, skillBar[2] ).addClass('full');
 	barPs.slice( 0, skillBar[3] ).addClass('full');
 	barAi.slice( 0, skillBar[4] ).addClass('full');
+	barId.slice( 0, skillBar[5] ).addClass('full');
+	barPr.slice( 0, skillBar[6] ).addClass('full');
+	barAf.slice( 0, skillBar[7] ).addClass('full');
 	
 	
 	
@@ -98,8 +107,12 @@ $(function(){
 
 		}
 	}
-	
-    $('#navbtn1').on('click', function(){
+    $('#logo_main').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+	$('#navbtn1').on('click', function(){
         $('html, body').animate({
             scrollTop: $('#page1').offset().top
         }, 500);

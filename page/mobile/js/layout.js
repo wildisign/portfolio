@@ -21,6 +21,7 @@ $(function () {
 		if($(window).width() >= 1025 && $('.tab_play').hasClass('active')) {
 			$(".container").css("overflow", "hidden");
 			   console.log("히든");
+			$(".container").scrollTop(0);
 		   }
 		if($(window).width() >= 1025 && $('.tab_rent').hasClass('active')) {
 			$(".container").css("overflow", "auto");
