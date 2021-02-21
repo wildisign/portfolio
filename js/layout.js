@@ -168,6 +168,25 @@ $(function(){
 		
 }
 	
+$(".btn_work.detailview.t1").on('click', function(e){
+	event.preventDefault(e);
+	$('body').addClass('stop-scrolling');
+    $(".popup_set").show();
+	$(".popup_set > .popup_detail > img").removeClass('on');
+	$(".popup_set > .popup_detail > .detail_bgd").addClass('on');
+});
+$(".btn_work.detailview.t2").on('click', function(e){
+	event.preventDefault(e);
+	$('body').addClass('stop-scrolling');
+    $(".popup_set").show();
+	$(".popup_set > .popup_detail > img").removeClass('on');
+	$(".popup_set > .popup_detail > .detail_rh").addClass('on');
+});
+$(".popup_btn").on('click', function(){
+	$('body').removeClass('stop-scrolling');
+	$(".popup_set").hide();  
+});
+
 });
 /*
 window.addEventListener('scroll', () => { // 삼각형 함수

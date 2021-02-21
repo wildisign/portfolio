@@ -327,7 +327,7 @@ a{text-decoration: none;}
 		z-index: 1;
 		font-size: 16px;
 	}
-	.container::-webkit-scrollbar {
+	.container::webkit-scrollbar {
 		display: none;
 	}
 	.nav_sec {

@@ -400,3 +400,63 @@
 	left: 180px;
 	width: 780px;
 }
+.popup_set {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.popup_detail {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	height: 700px;
+	overflow: auto;	
+	z-index: 2000;
+}
+.popup_detail::-webkit-scrollbar {
+	width: 10px;
+}
+.popup_detail::-webkit-scrollbar-thumb {
+	background-color: #777;
+	border-radius: 10px;
+}
+.popup_detail::-webkit-scrollbar-track {
+	background-color: #ccc;
+	border-radius: 10px;
+}
+.popup_detail > img {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.popup_detail > img.on {
+	display: block;
+}
+.popup_btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(280px, -300px);
+	z-index: 2000;
+}
+.popup_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 1999;
+	opacity: 70%;
+}
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
